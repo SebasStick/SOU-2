@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutoriales Realistic Soccer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Selector de idioma global -->
+        <!-- Formulario de entrada -->
+    <div id="formulario-container">
+    <h2 data-i18n="bienvenida">Bienvenido</h2>
+    <p data-i18n="form_intro">Por favor ingresa tu nombre y correo electrónico para continuar:</p>
+    <input type="text" id="nombre" placeholder="Tu nombre" required data-i18n-placeholder="form_nombre">
+    <input type="email" id="correo" placeholder="Tu correo electrónico" required data-i18n-placeholder="form_correo">
+    <button onclick="validarDatos()" data-i18n="form_entrar">Entrar</button>
+    <p id="mensaje-error" style="color: red;"></p>
+    </div>
+
+    <!-- Contenido de la página (oculto al inicio) -->
+    <div id="contenido" style="display: none;">
+        <header>
+            <h1 class="titulo" id="header-titulo" data-i18n="index_titulo">⚽ Tutoriales de Realistic Soccer ⚽</h1>
+
+            <!-- Menú de navegación (oculto hasta que se acepte el formulario de presentación) -->
+            <nav id="menu-navegacion" style="display: none;">
+                <ul>
+                    <li><a href="#tarjetas-gif" data-i18n="menu_inicio">Inicio</a></li>
+                    <li><a href="tutoriales.html" data-i18n="menu_tutoriales">Tutoriales</a></li>
+                    <li><a href="tips.html" data-i18n="menu_tips">Tips</a></li>
+                    <li><a href="blog.html" data-i18n="menu_blog">Blog</a></li>
+                    <li><a href="quienes-somos.html" data-i18n="menu_quienes">Quienes somos</a></li>
+                    <li><a href="encuestas.html" class="encuestas-activa" data-i18n="menu_encuestas">Encuestas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Fondo de pantalla para la presentación -->
+            <div id="fondo-presentacion">
+                <section id="presentacion">
+                    <h2 class="titulo-secundario" data-i18n="presentacion_hola">Hola, <span id="nombre-usuario"></span> 👋</h2>
+                    <p class="intro-texto" data-i18n="presentacion_intro">¡Nos alegra tenerte aquí! Comencemos con una breve introducción.</p>
+
+                    <h1 class="formulario-presentacion" data-i18n="presentacion_form">Formulario de Presentación</h1>
+                    <p class="texto-central" data-i18n="presentacion_texto">
+                        <strong>Hola querido usuario,</strong><br><br>
+                        Gracias por elegirnos para mejorar tu experiencia dentro del juego <strong>Realistic Soccer</strong>.<br><br>
+                        Aquí encontrarás un completo catálogo de <strong>tutoriales, tips y estrategias</strong> para convertirte en uno de los mejores.<br><br>
+                        Aprende, domina el juego y disfruta todos los servicios que tenemos preparados para ti.
+                    </p>
+
+                    <button id="btnContinuar" data-i18n="presentacion_btn">Aceptar y continuar</button>
+                    <p class="terminos"><a href="https://en.help.roblox.com/hc/es/articles/115004647846-T%C3%A9rminos-de-uso-de-Roblox#user-terms" target="_blank" rel="noopener noreferrer" data-i18n="presentacion_terminos">Términos y condiciones</a></p>
+                </section>
+            </div>
+
+            <!-- Sección futura: menú de tutoriales -->
+            
+            <div class="tarjetas-gif" id="tarjetas-gif" style="display: none;">
+                <div class="tarjeta">
+                    <img src="videos.gif/tip.gif.gif" alt="Tips y Trucos">
+                    <h3 data-i18n="tarjeta_tips_titulo">Consejos y Tips</h3>
+                    <p data-i18n="tarjeta_tips_texto">Aprende y guiate de los mejores tips y consejos de nuestros profecionales, maestros y hasta la comunidad de RRS 😱​🥳!.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="videos.gif/comunidad.gif.gif" alt="Comunidad">
+                    <h3 data-i18n="tarjeta_comunidad_titulo">Comunidad</h3>
+                    <p data-i18n="tarjeta_comunidad_texto">Interactua, enseña, comparte!! aqui en nuestra amplia comunidad hay infinitos servicios para mejorar, aprender o simplemente divertirte 😎​​.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="videos.gif/jugadas.gif.gif" alt="Tutoriales">
+                    <h3 data-i18n="tarjeta_tutoriales_titulo">Tutoriales</h3>
+                    <p data-i18n="tarjeta_tutoriales_texto">Descubre estrategias y movimientos clave para ganar partidos, aprender jugadas legendarias y guiarte de los pasos para convertirte en todo en proplayer de RRS 👑​🎓.</p>
+                </div>
+            </div>
+
+
+
+</section>
+
+        </main>
+
+        <footer>
+            <p>© 2025 Realistic Soccer. <span data-i18n="footer_todos">Todos los derechos reservados.</span></p>
+            <p data-i18n="footer_desarrollado">Desarrollado por [Sebastian Stick Mosquera]</p>
+        </footer>
+
+    <script src="java/script-index.js"></script>
+
+</body>
+</html>
+
+

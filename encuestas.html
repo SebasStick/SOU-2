@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas - Realistic Soccer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <a href="index.html#tarjetas-gif" class="btn-regresar-peq">&lt;</a>
+    
+    <main>
+    <h1 style="text-align:center;" data-i18n="encuestas_titulo">Encuestas</h1>
+        <div class="encuesta-tarjeta-central">
+            <h2 data-i18n="encuestas_subtitulo">¡Responde estas preguntas!</h2>
+            <form id="form-encuesta" onsubmit="enviarEncuesta(event)">
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_colores">¿Te gustan los colores de la página?</label>
+                    <label><input type="radio" name="colores" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="colores" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_navegacion">¿La navegación te parece fácil?</label>
+                    <label><input type="radio" name="navegacion" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="navegacion" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_recomendar">¿Recomendarías la página a un amigo?</label>
+                    <label><input type="radio" name="recomendar" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="recomendar" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_tutoriales">¿Te resultan útiles los tutoriales?</label>
+                    <label><input type="radio" name="tutoriales" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="tutoriales" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_eventos">¿Te gustaría ver más eventos en la página?</label>
+                    <label><input type="radio" name="eventos" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="eventos" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_amigable">¿Consideras que la comunidad es amigable?</label>
+                    <label><input type="radio" name="amigable" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="amigable" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_notificaciones">¿Te gustaría recibir notificaciones de novedades?</label>
+                    <label><input type="radio" name="notificaciones" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="notificaciones" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_premios">¿Te parecen atractivos los premios ofrecidos?</label>
+                    <label><input type="radio" name="premios" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="premios" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_masjuegos">¿Te gustaría que se agregaran más juegos o actividades?</label>
+                    <label><input type="radio" name="masjuegos" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="masjuegos" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <div class="chatlist-si-no">
+                    <label data-i18n="encuesta_soporte">¿El soporte de la página ha sido satisfactorio?</label>
+                    <label><input type="radio" name="soporte" value="si" required> <span data-i18n="si">Sí</span></label>
+                    <label><input type="radio" name="soporte" value="no"> <span data-i18n="no">No</span></label>
+                </div>
+                <button type="submit" data-i18n="encuestas_enviar">Enviar encuesta</button>
+            </form>
+        </div>
+        <div id="modal-premio" class="modal-premio" style="display:none;">
+            <div class="tarjeta-premio-modal">
+                <img src="https://png.pngtree.com/png-vector/20250620/ourmid/pngtree-3d-a-golde3n-soccer-cleats-illustration-clipart-on-realistic-png-image_16557265.png" alt="Premio" />
+                <h3 data-i18n="encuestas_gracias">¡Gracias por participar!</h3>
+                <p data-i18n="encuestas_reclama">¡Reclámalo directamente en el juego!</p>
+                <button onclick="cerrarPremio()" class="btn-reclamar" data-i18n="encuestas_btn_reclamar">Reclamar directamente en el juego</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Realistic Soccer. <span data-i18n="footer_todos">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="java/script-encuestas.js"></script>
+</body>
+</html>

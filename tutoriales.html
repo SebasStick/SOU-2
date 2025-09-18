@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutoriales - Realistic Soccer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <a href="index.html#tarjetas-gif" class="btn-regresar-peq">&lt;</a>
+    <div class="fondo-tutoriales">
+        <header>
+            <h1 data-i18n="tutoriales_titulo">Tutoriales</h1>
+        </header>
+        <main>
+    <h1 style="text-align:center;" data-i18n="tutoriales_playlist">Playlist de Tutoriales ▶️​</h1>
+        <div class="tutoriales-selecciones">
+            <button class="btn-tutorial" onclick="toggleLista('basico')">Básico</button>
+            <button class="btn-tutorial" onclick="toggleLista('intermedio')">Intermedio</button>
+            <button class="btn-tutorial btn-tutorial-locked" disabled>Avanzado <span style="font-size:1.2em;vertical-align:middle;">🔒</span></button>
+        </div>
+        <div id="lista-basico" class="tutoriales-lista" style="display:none;">
+            <div class="tutoriales-lista-header">
+                <h3>Básico</h3>
+                <button class="btn-cerrar-lista" onclick="cerrarLista('basico')">✖</button>
+            </div>
+            <ul>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Básico 1" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Cómo empezar en Realistic Soccer</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Básico 2" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Primeros pasos y controles básicos</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_3" title="Básico 3" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Reglas esenciales del juego</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Básico 4" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Cómo marcar tu primer gol</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_5" title="Básico 5" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Consejos para mejorar rápido</p>
+                </li>
+            </ul>
+        </div>
+        <div id="lista-intermedio" class="tutoriales-lista" style="display:none;">
+            <div class="tutoriales-lista-header">
+                <h3>Intermedio</h3>
+                <button class="btn-cerrar-lista" onclick="cerrarLista('intermedio')">✖</button>
+            </div>
+            <ul>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_6" title="Intermedio 1" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Tácticas de equipo y posicionamiento</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_7" title="Intermedio 2" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Cómo defender como un profesional</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_8" title="Intermedio 3" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Mejorando tu precisión en los tiros</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_9" title="Intermedio 4" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Estrategias para ganar partidos cerrados</p>
+                </li>
+                <li>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_10" title="Intermedio 5" frameborder="0" allowfullscreen></iframe>
+                    <p class="desc-video">Cómo organizar tu propio torneo</p>
+                </li>
+            </ul>
+        </div>
+    <script src="java/script-tutoriales.js"></script>
+    </main>
+    <footer>
+        <p>© 2025 Realistic Soccer. <span data-i18n="footer_todos">Todos los derechos reservados.</span></p>
+    </footer>
+
+    </div>
+</body>
+</html>
